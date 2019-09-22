@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul li:first-child{
+        color:teal;
+    }
+    ul li:last-child{
+        color:red;
+    }
+    ul li:nth-child(8){
+        color:green;
+    }
+    ul li::before
+    {
+        content:"hello";
+    }
+    a:hover{
+        color:red;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+        <li>list6</li>
+        <li>list7</li>
+        <li>list8</li>
+        <li>list9</li>
+        <li>list10</li>
+    </ul>
+        <a href="#">click me</a>
+</body>
+</html>
