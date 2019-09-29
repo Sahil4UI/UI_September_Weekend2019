@@ -1,0 +1,96 @@
+/* global settings */
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top:0;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+/* helper classes */
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+.clear-fix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* header */
+#header{
+    background-color: #2874F0;
+}
+
+#header a{
+    color:#fff;
+}
+#header ul li{
+    display: inline-block;
+}
+#header .logo{
+    width:6%;
+    line-height: 0;
+    margin-left:13%;
+    padding:8px;
+
+
+}
+#header .logo .logo_img img{
+    width:100%;
+}
+#header .logo .logo_caption a{
+    font-size: 11px;
+    font-style: italic;
+}
+#header .logo .logo_caption span{
+    color:#ffe500;
+    font-weight: 600;
+}
+#header .logo .logo_caption img{
+    width:11px;
+}
+#header .search_bar{
+    width:40%;
+    padding:8px;
+    
+}
+#header .search_bar input[type="text"]{
+    width:100%;
+    padding:8px 12px;
+}
+#header .user_list{
+    width:34%;
+}
+#header .user_list ul li{
+    margin-right:50px;  
+ }
+#header .user_list ul li a{
+    font-size:15px;
+    letter-spacing: 1px;
+    display: block;
+    padding:16px 0px;
+    font-weight: bold;
+}
+#header .user_list ul li .more{
+    font-size: 10px;
+}
+#header .user_list  i{
+margin:0 3px;
+}
