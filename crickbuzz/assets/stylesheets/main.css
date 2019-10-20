@@ -41,17 +41,16 @@ a{
     padding-top:4px;
 
 }
-#header ul li{
-    display: inline-block;
-}
-#header ul li a{
+
+#main-navigation ul > li a{
     color:#fff;
     text-transform: capitalize;
     padding:15px 5px;
     font-size: 14px;
 }
-#header ul li{
+#main-navigation ul li{
     padding:14px 0px;
+    display: inline-block;
 }
 
 .logo{
@@ -64,8 +63,41 @@ width:70%;
 margin-left: 25px;
 
 }
-#main-navigation ul li a:hover{
+#main-navigation ul > li a:hover{
     background-color: #028062;
+}
+#main-navigation ul li{
+    position: relative;
+}
+#main-navigation ul li .dropdown
+{   position: absolute;
+    display:none;
+    background-color: #f5f5f5;
+    top:46px;
+    width:max-content;}
+
+#main-navigation .dropdown ul li a:hover{
+background-color: #ECEBEB;
+}
+
+#main-navigation .dropdown ul li a{
+    color:#000;
+    display:block;
+    padding:5px 4px;
+}
+.dropdown ul li{
+    display: block !important;
+    padding:0 !important;
+}
+.dropdown ul .more {
+    text-align: right;
+    
+}.more a{
+    color:blue !important;
+      
+}
+#main-navigation ul li:hover .dropdown{
+    display: block;
 }
 .search_box{
 width:12%;
@@ -97,3 +129,61 @@ margin-right: 25px;
     background-color: #00785C;
     padding:9.5px;
 }
+.secondary-navigation{
+    background-color: #fff;
+}
+.secondary-navigation ul li{
+    display: inline-block;
+    padding:8px 6px;
+}
+.secondary-navigation ul li  a{
+    color:#000;
+    font-size: 14px;
+    }
+    .secondary-navigation ul ~ a{
+        margin:8px 4px;
+    
+    }
+    .secondary-navigation ul li a:hover{
+        color: #028062;
+        font-weight: 600;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #028062;
+    }
+    
+    .secondary-navigation .active{
+        color: #028062;
+        font-weight: 600;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #028062;
+    }
+    .sidebar-1,#main,.sidebar-2{
+        background-color: #fff;
+    }
+    #content
+    {
+        margin-top:8px;
+    }
+    .sidebar-1{
+        width:20%;
+        padding:12px 10px;
+    }
+    .sidebar-1 ul li{
+        padding:8px 0;
+        border-bottom: 1px solid #E3E6E3;
+        line-height: 1.2;
+    }
+    .sidebar-1 small{
+        display: block;
+        color:#666;
+    }
+    .sidebar-1 a{
+        color:#000;
+        font-size: 14px;
+    }
+    #main{
+        width:45%;
+    }
+    .sidebar-2{
+        width:30%;
+    }
