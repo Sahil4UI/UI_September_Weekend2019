@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+        overflow: hidden;
+    }
+#slider {
+    height:350px;
+    width:500%;
+    position: relative;
+    animation: 20s carousel infinite;
+}
+#slider div{
+    width:20%;
+    height:inherit;
+    background-size: 100% 100%;
+    position: absolute;
+}
+#div-1
+{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/Events/Wave-1/GW/Headers/English/FST/W1_Teaser-1_PC_FSt1_1x._CB452765555_.jpg");
+}
+
+#div-2
+{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/Wireless/Jupiter19/OnePlus/OnePlus7T/Event/D12760900_JupiterWave1_OnePlus_7T_Graphics_PEA_TallHero_1500x600_1._CB452964856_.jpg");
+    left:20%;
+}
+
+#div-3
+{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/Wireless/Jupiter19/Xiaomi/Redmi7A/MainEvent/PriceDrop/Updated/New/D13030101_Jupiter19_WLM_Mi_Redmi_7_7A_TallHero_1500x600._CB451054782_.jpg");
+    left:40%;
+}
+
+#div-4
+{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/Fashion/Wave1/SL/updated/PC/1500x500_Jupiter_W1_Fashion_Non-PEA._CB452984653_.jpg");
+    left:60%;
+}
+
+#div-5
+{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/CEPC/JupiterW1/Heros/Unrec-edited/unrec_live_GW_tall-hero_1500x600._CB436851464_.jpg");
+    left:80%;
+}
+@keyframes carousel{
+    0%{
+        transform: translateX(0%);
+    }
+    15%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-20%);
+    }
+    35%{
+        transform: translateX(-20%);
+    }
+    40%{
+        transform: translateX(-40%);
+    }
+    
+    55%{
+        transform: translateX(-40%);
+    }
+    60%{
+        transform: translateX(-60%);
+    }
+    
+    75%{
+        transform: translateX(-60%);
+    }
+    80%{
+        transform: translateX(-80%);
+    }
+    95%{
+        transform: translateX(-80%);
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+}
+</style>
+<body>
+
+    <div id="slider">
+        <div id="div-1"></div>
+        <div id="div-2"></div>
+        <div id="div-3"></div>
+        <div id="div-4"></div>
+        <div id="div-5"></div>
+    </div>
+</body>
+</html>
