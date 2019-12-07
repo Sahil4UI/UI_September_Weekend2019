@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .wrapper{
+        width:100%;
+        display: flex;
+    }
+    .wrapper div{
+        height:200px;
+        width:50%;
+    }
+    .div-1{
+        background-color:pink;
+    }
+    .div-2{
+        background-color: yellow;
+    }
+    @media (max-width:520px)
+    {
+        .wrapper{
+            display: block;
+        }
+        .wrapper div{
+        width:100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+    </div>
+</body>
+</html>
